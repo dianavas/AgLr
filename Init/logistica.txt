@@ -1,8 +1,9 @@
 1. Pagina principala(Homepage)
 2. Pagina de creare cont 
-3. Pagina de sign-in/ pop-up (ca admin/ca utilizator normal)
+3. Pagina de manipulare date ca admin
 4. Pagina de profil utilizator 
 5. Pagina detalii teren 
 6. Formular pentru adaugare teren
 7. Pagina vizualizare harta
 8. Pagina export/import in formatele cerute
+
