@@ -19,7 +19,6 @@ footer {
 
 }
 header {
-	height: 60px;
 	background-image: url("./Patterns/grey.png");
 
 }
@@ -27,16 +26,22 @@ a {
 	text-decoration: none;
 	color:white;
 }
-
+nav{
+	padding-left: 25%;
+	padding-right: 25%;
+}
 nav div {
 	display: inline-block;
 	margin: 1%;
-}
 
-.side-right {
-	display: inline-block;
+}
+.right-log-in{
 	float:right;
 }
+.right-sign-in{
+	float: right;
+}
+
 .wrapper {
    display: grid;
    grid-template-columns: 1fr 2fr 1fr;
@@ -48,12 +53,14 @@ nav div {
   grid-column-end: 3; 
   grid-row-start: 1; 
   grid-row-end: 5; 
+  background-color: grey;
 }
 .middle-second{
   grid-column-start: 2; 
   grid-column-end: 3; 
   grid-row-start: 5; 
   grid-row-end: 7; 
+  background-color: #ffcccc;
 }
 
 main{
