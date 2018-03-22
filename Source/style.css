@@ -6,7 +6,7 @@ html {
 body{
 	margin: 0 0 30px; /* bottom = footer height */
 	font-family: sans-serif;
-	background-image: url("./Patterns/brickwall_@2X.png");
+	background-image: url("./Patterns/brickwall.png");
 }
 footer {
     position: absolute;
