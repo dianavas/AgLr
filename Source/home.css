@@ -153,9 +153,19 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
-    .single-image {
+    .images {
+        flex-wrap: wrap;
+        height: auto;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
     }
-}
+
+    .images > .single-image {
+        margin: 0;
+        margin-bottom: 20px;
+        height: 200px;
+        width: 80%;
+    }
 
 
