@@ -18,13 +18,12 @@ html, body {
 
 .navbar {
     width: 100%;
-
+    background-image: url("./Patterns/grey.png");
     color: black;
     height: 75px;
     margin-top: 0;
     display: flex;
     align-items: center;
-    border-bottom: 4px solid black;
     /*box-shadow: 0 5px 10px red;*/
 }
 
@@ -63,12 +62,11 @@ html, body {
     /*position:fixed;*/
     align-items: center;
     width: 100%;
-    border-bottom: 4px solid black;
 
 }
 a {
     text-decoration: none;
-    color:black;
+    color:white;
 }
 
 .header > .welcome-box {
@@ -90,7 +88,6 @@ a {
     display: flex;
     flex-flow: row  wrap;
     text-align: center;
-    border-bottom: 4px solid black;
 }
 
 .content > p, .content > h2 {
@@ -118,7 +115,6 @@ a {
 
 .single-image {
     display: inline-block;
-    border: 2px solid black;
     margin-right: 40px;
     border-radius: 5px;
 }
@@ -143,7 +139,8 @@ a {
 .footer {
     padding: 25px;
     display: flex;
-    
+    color:white;
+    background-image: url("./Patterns/grey.png");
     justify-content: center;
 }
 .footer small {

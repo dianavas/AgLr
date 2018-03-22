@@ -5,6 +5,9 @@ html {
 
 body{
 	margin: 0 0 30px; /* bottom = footer height */
+	    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+
 	font-family: sans-serif;
 	background-image: url("./Patterns/brickwall.png");
 }
@@ -70,7 +73,6 @@ main{
 }
 
 .profile {
-	background-image: url("./Patterns/green_cup.png");
 	padding: 1%;
 }
 
@@ -81,4 +83,15 @@ main{
 .sign-in{
 		padding: 1%;
 
+}
+
+.logo {
+    flex-basis: 70px;
+    height: 100%;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.logo > img {
+    width: 100%
 }
