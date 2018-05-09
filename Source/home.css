@@ -160,6 +160,17 @@ a {
         justify-content: center;
         flex-direction: column;
     }
+<<<<<<< HEAD
+=======
+
+    .images > .single-image {
+        margin: 0;
+        margin-bottom: 20px;
+        height: 200px;
+        width: 80%;
+    }
+
+>>>>>>> c671091c36e4dc03f8e8067eb993b0379a88a8a6
 
     .images > .single-image {
         margin: 0;
