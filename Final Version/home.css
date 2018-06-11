@@ -1,0 +1,180 @@
+
+html, body {
+    font-size: 16px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+.container{
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.navbar {
+    width: 100%;
+    background: #689F38;
+    color: white;
+    height: 75px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid black;
+    /*box-shadow: 0 5px 10px red;*/
+}
+
+.navbar > ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 600;
+}
+
+.navbar > ul > li{
+    list-style: none;
+    padding-right: 20px;
+}
+
+.logo {
+    flex-basis: 70px;
+    height: 100%;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.logo > img {
+    width: 100%
+}
+
+.header {
+    display: flex;
+    height: 400px;
+    background-image: url('http://www.softforest.in/images/slider/agriculture.jpg');
+    background-size: cover;
+    color: #1B5E20;
+    justify-content: center;
+    /*position:fixed;*/
+    align-items: center;
+    width: 100%;
+    text-shadow: 1px 1px white;
+}
+
+.header > .welcome-box {
+    opacity: 0.9;
+    background: #43A047;
+    width: 30%;
+    height: 120px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.welcome-box > p {
+    text-shadow: inherit;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-flow: row  wrap;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.content > p, .content > h2 {
+    flex: 1 100%;
+    display: inline-block;
+    line-height: 75px;
+}
+
+.content > p {
+    line-height: 0;
+}
+
+
+.images {
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    margin-bottom: 0 !important;
+}
+
+.single-image {
+    display: inline-block;
+    border: 2px solid black;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+
+.content > p, .content > h2 {
+    margin-bottom: 50px;
+}
+
+.content > .images {
+    margin-bottom: 20px;
+}
+
+.single-image:last-child {
+    margin-right: 0;
+}
+
+.single-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer small {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.single-image:first-child {
+    margin-left: 20px;
+}
+
+.single-image:last-child {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .images {
+        flex-wrap: wrap;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+<<<<<<< HEAD
+=======
+
+    .images > .single-image {
+        margin: 0;
+        margin-bottom: 20px;
+        height: 200px;
+        width: 80%;
+    }
+
+>>>>>>> c671091c36e4dc03f8e8067eb993b0379a88a8a6
+
+    .images > .single-image {
+        margin: 0;
+        margin-bottom: 20px;
+        height: 200px;
+        width: 80%;
+    }

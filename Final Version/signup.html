@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="https://agra.org/wp-content/uploads/2017/07/inputs.png" alt="logo"/>
+                </div>
+                <ul class="list-items">
+                    <li><a href="login.html">Log In</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <header class="header">
+                <div class="welcome-box">
+                    <h1 class="title">
+                        Agricultural Land Manager
+                    </h1>
+
+                </div>
+            </header>
+            <div class="content">
+                <div class = "sign-in">
+                    <form >
+                        <h1>Creare Cont Nou</h1>
+                        <input type="radio" name="utilizator" id="persoana-fizica" value="persoana-fizica" checked> <label for="persoana-fizica">Persoana Fizica</label><br>
+                        <input type="radio" name="utilizator"  id="colectiv" value="colectiv">  <label for="colectiv">Colectiv</label><br>
+                        <input type="radio" name="utilizator" id="corporatie"  value="corporatie"> <label for="corporatie">Corporatie </label> <br>
+                        Nume:<br>
+                        <input type="text" name="nume" placeholder="Lovinescu" required>
+                        <br>
+                        Prenume:<br>
+                        <input type="text" name="prenume" placeholder="Eugen">
+                        <br>
+                        E-mail:<br>
+                        <input type="email" name="email" placeholder="eugen.lovinescu@lit.com" required>
+                        <br>
+                        Username:<br>
+                        <input type="text" name="username" placeholder="lovi_eugen" required>
+                        <br>
+                        Parola:<br>
+                        <input type="password" name="parola" required>
+                        <br><br>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+            <footer class="footer">
+                <small>
+                    &copy;Copyright 2018
+                </small>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Log In</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="https://agra.org/wp-content/uploads/2017/07/inputs.png" alt="logo"/>
+                </div>
+                <ul class="list-items">
+                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <header class="header">
+                <div class="welcome-box">
+                    <h1 class="title">
+                        Agricultural Land Manager
+                    </h1>
+
+                </div>
+            </header>
+            <div class="content">
+                <div class = "log-in">
+                    <form method="POST" action="login.php">
+                        <h1>Login</h1>
+                        Unsername:
+                        <input type="text" name="username" placeholder="username" required>
+                        Parola:
+                        <input type="password" name="password" placeholder="password" required>
+                        <button>submit</button>
+                    </form>
+                    <span >Not member? Create account. | <a href="inregistrare_v1.php">Sign up</a></span>
+                </div>
+            </div>
+            <footer class="footer">
+                <small>
+                    &copy;Copyright 2018
+                </small>
+            </footer>
+        </div>
+    </body>
+</html>
