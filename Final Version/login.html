@@ -28,18 +28,33 @@
                 </div>
             </header>
             <div class="content">
-                <div class = "log-in">
-                    <form method="POST" action="login.php">
-                        <h1>Login</h1>
-                        Unsername:
-                        <input type="text" name="username" placeholder="username" required>
-                        Password:
-                        <input type="password" name="password" placeholder="password" required>
-                        <button>submit</button>
-                    </form>
-                    <span >Not member? Create account. | <a href="signup.html">Sign up</a></span>
+                    <h2 class="subtitle">
+                        Welcome
+                    </h2>
+                    <div class="form">
+                        <form method = "POST" action="login.php"> 
+                            <div class="form-group">
+                                <div class="form-control">
+                                    <label for="username">User-name</label>
+                                    <input type="text" name="username" placeholder="username" required/>
+                                </div>
+                                <div class="form-control">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" placeholder="password" required/>
+                                </div>
+                                <button type="submit" id="submit-button">Login</button>
+                                <div id ="signup">
+                                        <span>
+                                                " Not member? Create account.  "
+                                                  <a href="signup.html"> Sign up</a>
+                                        </span>
+                                </div>
+                            </div>
+                        </form>   
+                    </div>    
                 </div>
-            </div>
+
+                
             <footer class="footer">
                 <small>
                     &copy;Copyright 2018
