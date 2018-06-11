@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="https://agra.org/wp-content/uploads/2017/07/inputs.png" alt=" " />
+                </div>
+                <ul class="list-items">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </nav>
+            <header class="header">
+                <div class="welcome-box">
+                    <h1 class="title">
+                        Lorem ipsum
+                    </h1>
+                    <p class="subtitle">
+                        Lorem ipsum long text
+                    </p>
+                </div>
+            </header>
+            <div class="content">
+                <h2 class="subtitle">
+                    Formular de adaugare teren
+                </h2>
+                <p class="description">
+                    Lorem ipsum description
+                </p>
+                <div class="form">
+                    <form action="/">
+                        <div class="form-group">
+                            <div class="form-control">
+                                <label for="zona">Zona</label>
+                                <input type="text" id="zona"/>
+                            </div>
+                            <div class="form-control">
+                                <label for="suprafata">Suprafata</label>
+                                <input type="number" id="suprafata"/>
+                            </div>
+                            <div class="form-control">
+                                <label for="climat">Climat</label>
+                                <select id="climat">
+                                    <option>Optiune 1</option>
+                                    <option>Optiune 2</option>
+                                    <option>Optiune 3</option>
+                                </select>
+                            </div>
+                            <div class="form-control">
+                                <label for="vanzareDa">De vanzare</label>
+                                <div class="flex-container radio-controls">
+                                    <div class="radio-control">
+                                        <label for="vanzareNu">
+                                            Da
+                                        </label>
+                                        <input checked type="radio" name="vanzare" id="vanzareNu" value="Nu"/>
+                                    </div>
+                                    <div class="radio-control">
+                                        <label for="vanzareDa">
+                                            Nu
+                                        </label>
+                                        <input type="radio" name="vanzare" id="vanzareDa" value="Da"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" id="submit-button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <footer class="footer">
+                <small>
+                    &copy;Copyright 2018
+                </small>
+            </footer>
+        </div>
+    </body>
+</html>
