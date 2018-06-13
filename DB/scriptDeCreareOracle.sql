@@ -1,7 +1,5 @@
 DROP TABLE utilizator CASCADE CONSTRAINTS
 /
-DROP TABLE cont CASCADE CONSTRAINTS
-/
 DROP TABLE teren CASCADE CONSTRAINTS
 /
 DROP TABLE cadastru CASCADE CONSTRAINTS
@@ -9,26 +7,16 @@ DROP TABLE cadastru CASCADE CONSTRAINTS
 
 CREATE TABLE utilizator (
   id INT NOT NULL PRIMARY KEY,
+  email VARCHAR2(40),
   nume VARCHAR2(15) NOT NULL,
   prenume VARCHAR2(30) NOT NULL,
-  data_nastere DATE,
-  email VARCHAR2(40),
-  tip VARCHAR2(30) NOT NULL,
-  created_at DATE,
-  updated_at DATE
+  username VARCHAR2(30),
+  parola VARCHAR2(30),
+  data_nastere DATE,  
+  tip VARCHAR2(30) NOT NULL
 )
 /
 
-CREATE TABLE cont (
-  id INT NOT NULL PRIMARY KEY,
-  id_utilizator INT NOT NULL,
-  username VARCHAR2(30) NOT NULL,
-  parola VARCHAR2(30) NOT NULL,
-  created_at DATE,
-  updated_at DATE,
-  CONSTRAINT fk_cont_id_utilizator FOREIGN KEY (id_utilizator) REFERENCES utilizator(id)
-)
-/
 
 CREATE TABLE teren (
   id INT NOT NULL PRIMARY KEY,
