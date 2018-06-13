@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Raport Tehnic</title>
+    <link rel="stylesheet" href="scholarly.css">
+    <link rel="stylesheet" href="prism-coy.css">
+    <script src="prism.js" defer></script>
+  </head>
+  <body prefix="prefix">
+    <header>
+      <p class="title">Raport Tehnic</p>
+      <p class="subtitle">Agricultural Land Manager</p>
+    </header>
+
+<article id="what" typeof="schema:ScholarlyArticle" resource="#">
+
+
+      <section>
+        <ol>
+          <li property="schema:author" typeof="sa:ContributorRole">
+            <a property="schema:author" typeof="schema:Person">
+              <span property="schema:givenName">Diana</span>
+              <span property="schema:familyName">Vasilache</span>
+            </a>              
+          </li>           
+          <li property="schema:author" typeof="sa:ContributorRole">
+            <a property="schema:author" typeof="schema:Person">
+              <span property="schema:givenName">Florina</span>
+              <span property="schema:familyName">Airinei</span>
+            </a>              
+          </li>              
+          
+        </ol>
+      </section>
+
+<h1 style="padding-top:15%;">Index</h1>
+
+
+      <section style="font-size:120%;" typeof="sa:ReferenceList" id="index">
+      
+      <ol type="1">
+      <li><a href="#introducere">Introducere</li>                 
+      <li><a href="#detalii">Detalii despre proiect</li>       
+      <li><a href="#tehnologii">Tehnologii utilizate</li>
+      <li><a href="#arhitectura">Arhitectura aplicației</li>       
+      <li><a href="#tehnice">Detalii de implementare</li>
+      <li><a href="#tehnice">Workflow</li>
+    </ol>
+    </section>
+ <section typeof="sa:Abstract" id="introducere">
+        <h2>Introducere</h2>
+        <p>
+          <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/projects/xml-transform.php?pag=projects">
+          <project>AgLr</project></a> este o aplicație disponibilă pe <web>Web</web> care permite utilizatorului să își gestioneze informațiile despre terenurile agricole deținute.  
+          Scopul aplicației: căutarea terenurilor agricole care reprezintă un interes pentru untilizator.</p>
+      </section>
+
+<section typeof="sa:Abstract" id="detalii">
+        <h2>Detalii despre aplicație</h2>
+        <p>
+        
+        <ul>
+
+        <li > <strong id="detaliu">Reprezentare utilizator:</strong> 
+          Un cont de utilizator, creat în cadrul site-ului, prin metoda de înregistrare user/pass.</li>
+        <li ><strong id="detaliu">Reprezentare persoană căutată:</strong> Pagină principală a aplicației, în care vom avea secțiuni pentru fiecare teren agricol deținut.</li>
+        </ul>
+
+        </p>
+</section>
+
+
+
+
+<section typeof="sa:MaterialsAndMethods" id="tehnologii">
+        <h2>Tehnologii Utilizate</h2>
+
+        
+<h3>Server de baze de date utilizat</h3>
+
+        Pentru a reține toți utilizatorii și datele asociate acestora va fi nevoie de o bază de date <strong>MySQL</strong>:
+        
+        <p>
+        <ul>
+          <li>Tabela <b>Utilizator</b>: va conține următoarele atribute: <code>id</code>, <code>email</code>, <code>nume</code> , <code>prenume</code>,<code>parola</code>,<code>data_nastere</code> asociate fiecărui utilizator care se înregistrează.</li>
+        
+          <li>Tabela <b>teren</b>: va conține următoarele atribute: <code>id</code>, <code>id_utilizator</code>, <code>clima</code>, <code>riscuri</code>,<code>riscuri</code>, <code>altele</code>, <code>categorie</code></li>
+        
+          <li>Tabela <b>cadastru</b>: va conține atributele: <code>id</code>, <code>id_teren</code> , <code>suprafata</code>, </li>
+
+        
+        </ul>
+
+
+
+
+          </figure>
+           
+
+        </p>
+        <h3>Limbaje de programare utilizate</h3>
+
+        <p>
+        <ol>
+        <li>Pentru interfața grafică: se va utiliza <strong>HTML5</strong> și <strong>CSS</strong>.</li>
+        <li>Pentru preluarea datelor din formulare și introducerea lor în baza de date se va utiliza <strong>PHP</strong> și <strong>XML.</strong></li>
+        <li>Pentru interogarea bazei de date se va utiliza <strong>SQL.</strong></li>
+        <li>Pentru crearea elementelor grafice vom folosi <strong>JavaScript</strong>. </li>
+        </ol>
+        </p>
+</section>
+
+
+
+
+<section typeof="sa:MaterialsAndMethods" id="arhitectura">
+
+      <h2> Arhitectura aplicației </h2>
+      <li>
+        Aplicația este un MVC, modelul fiind baza de date în care se stochează informațiile (metadatele fișierelor găsite, etc.), view-ul fiind pagina principală, stilizată cu elemente specifice, și controllerul fiind aplicația, prin partea de back-end. 
+      </li>
+        Aplicația are mai multe pagini: 
+        <li>
+          pagină de <strong>signup</strong>, în care utilizatorul își crează un cont
+        </li>
+        <li>
+          pagină de <strong>login</strong>, în care utilizatorul introduce datele de logare
+        </li>
+        <li>
+          pagina <b>principală</b>, unde vor fi afișate informațiile despre utilizator și terenurile deținute de acesta
+        </li>
+        Modul de funcționare al aplicației: inițial, utilizatorul dacă nu are deja un cont, ar trebui să se înregistreze, iar dacă a mai folosit aplicația trebuie doar sa se logheze. După logare, utilizatorul poate să caute trenurile agricole care îi stârnește interesul, sau poate să caute prin propriile terenuri, având posibilitatea modificării lor, sau introducerii a noi terenuri agricole, putând astfel să importe și să exporte datele în format CSV, JSON sau XML. 
+</section>
+
+
+
+<section  typeof="sa:MaterialsAndMethods" id="tehnice">
+   <h3>Arhitectura de ansamblu</h3>
+
+      <strong>Pagini</strong>
+
+      <ul style="list-style-type:square">
+
+      <li>
+        În pagina de <b>login</b>, vom avea câmpuri pentru user și parolă.
+      </li>
+
+     
+</ul>
+</section>
+
+
+<section typeof="sa:MaterialsAndMethods" id="workflow">
+    <h2> Workflow </h2>
+    <figure typeof="schema:Table" typeof="sa:MaterialsAndMethods">
+      <table>
+              <thead>
+                <tr>
+                  <td>Nr. Ordine</td>
+                  <td>Sarcina</td>
+                  <td>Deadline</td>
+                  <td>Responsabil</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td> 
+                  <td>Stabilire design</td>
+                  <td>martie</td>
+                  <td>Diana Vasilache, Florina Airinei</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Creat diagrame use-case</td>
+                  <td>aprilie</td>
+                  <td>Florina Airinei</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Documentare asupra Scholary HTML</td>
+                  <td>mai</td>
+                  <td>Diana Vasilache, Florina Airinei</td>
+                  
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Crearea documentației</td>
+                  <td>mai</td>
+                  <td>Diana Vasilache, Florina Airinei</td>
+                  
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Documentat asupra JavaScript, PHP, etc.</td>
+                  <td></td>
+                  <td>Diana Vasilache, Florina Airinei</td>
+                  
+                </tr><tr>
+                  <td>6</td>
+                  <td>Stabilire structură bază de date</td>
+                  <td>mai</td>
+                  <td>Diana Vasilache</td>
+                </tr><tr>
+                  <td>7</td>
+                  <td>Creare model DB</td>
+                  <td>Mai</td>
+                  <td>Diana Vasilache</td>
+                </tr><tr>
+                  <td>8</td>
+                  <td>Stabilire aspect pagină de login</td>
+                  <td>09.04.2016</td>
+                  <td>Florina Airinei</td>
+                </tr><tr>
+                  <td>9</td>
+                  <td>Stabilire format pagină principală</td>
+                  <td>mai</td>
+                  <td>Diana Vasilache, Florina Airinei</td>
+                </tr>Florina Airinei și Diana Vasilache<tr>
+                  <tr>
+                  <td>10</td>
+                  <td>Continuare.....</td>
+                  <td>mai</td>
+                  <td>Diana Vasilache, Florina Airinei</td>
+                </tr>Florina Airinei și Diana Vasilache<tr>
+                  </table>
+</section>
