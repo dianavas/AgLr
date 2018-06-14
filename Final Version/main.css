@@ -101,6 +101,7 @@ html, body {
     flex-flow: row  wrap;
     text-align: center;
     border-bottom: 2px solid black;
+    padding: 5%;
 }
 
 .content > p, .content > h2 {
@@ -280,4 +281,24 @@ footer {
         width: 60%;
     }
 
+}
+
+.flex-container{
+    display: flex;
+}
+
+.map {
+    min-height: 350px;
+    width: 100%;
+    padding: 50px;
+    justify-content: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.map > iframe {
+    width: 600px;
+    display:block;
 }
